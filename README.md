@@ -13,16 +13,19 @@ npm install --save react-local-storage
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+  
+  // to set an item in local storage 
+  let temp = SetItem("name",value);
 
-import MyComponent from 'react-local-storage'
-import 'react-local-storage/dist/index.css'
+//to get item from local storage
+  let item = GetItem("name");
+   console.log(item);
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+//to remove item from local storage 
+   console.log(RemoveItem("name"));
+
+//to clear item from local storage 
+   Clear();
 ```
 
 ## License
